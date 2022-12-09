@@ -1,13 +1,12 @@
 <template>
     <div class="hello">
         <h1>{{ msg }}</h1>
-
     </div>
 </template>
   
 <script>
 export default {
-    name: 'Home',
+    name: 'About',
     props: {
         msg: String
     }
@@ -34,4 +33,3 @@ a {
     color: #42b983;
 }
 </style>
-  

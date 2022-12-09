@@ -1,13 +1,24 @@
 <template>
     <div class="hello">
         <h1>{{ msg }}</h1>
-
     </div>
+
+    <!-- Loop thru projects and display -->
+    <span v-for="n in 10">
+        <Project :msg="'Project ' + n" />
+    </span>
+
+
 </template>
   
 <script>
+import Project from '@/components/Project'
+
 export default {
-    name: 'Home',
+    name: 'Work',
+    components: {
+        Project
+    },
     props: {
         msg: String
     }
@@ -34,4 +45,3 @@ a {
     color: #42b983;
 }
 </style>
-  
